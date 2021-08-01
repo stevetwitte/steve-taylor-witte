@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      {% block title %}steve.taylorwitte.com{% endblock %}
+    </title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Homepage Steve Taylor Witte, a software engineer, musician, creative person, posting about things and staring projects all the time."/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css?v={% version %}"/>
+    {% block head %}{% endblock %}
+    <script defer src="/js/alpine.js?v={% version %}"></script>
+  </head>
+  <body class="subpixel-antialiased bg-green-900">
+    <header class="bg-green-500 p-5 pb-0 md:p-8 md:pb-0 border-b-4 border-green-50">
+      <div class="relative -top-1 left-2 font-light italic text-gray-50 text-4xl md:text-5xl md:ml-12 lg:ml-24 xl:ml-44">
+        <span class="text-sm not-italic absolute top-0 left-0">the homepage of</span>
+        <h1 class="absolute top-3 left-2">steve taylor witte</h1>
+        <span class="text-sm not-italic absolute top-12 md:top-12 left-12 md:left-36 mt-1 md:mt-3">software engineer, musician, creative</span>
+      </div>
+      <div class="text-gray-50 font-normal text-lg lg:text-xl mt-20 md:mt-16 pr-12 pb-0 pt-2 text-right max-w-4xl">
+        <span class="border-t-2 border-l p-2">menu</span>
+        <nav class="text-gray-50 font-normal text-lg lg:text-xl md:text-base pb-0 pt-2 text-center hidden">
+          <ul class="list-inside">
+            <li class="inline-block mr-5 md:mr-6">
+              <a href="/">home</a>
+            </li>
+            <li class="inline-block mr-5 md:mr-6">
+              <a href="/content/">content</a>
+            </li>
+            <li class="inline-block mr-5 md:mr-6">
+              <a href="/sites/">web</a>
+            </li>
+            <li class="inline-block mr-5 md:mr-6">
+              <a href="/contact/">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="relative md:ml-12 lg:ml-24 xl:ml-44 max-w-4xl">
+      <aside class="absolute left-2 w-1 h-1/2 -top-24 z-10 bottom-0 bg-green-50"></aside>
+      <aside class="absolute right-2 w-1 h-1/2 top-32 z-10 bottom-0 bg-green-100"></aside>
+      <article class="p-8 pl-12">
+        {% block content %}
+          {{ content | safe }}
+        {% endblock %}
+      </article>
+    </main>
+    <footer class="mt-40 text-center md:ml-12 lg:ml-24 xl:ml-44 max-w-4xl">
+      <aside class="absolute left-2 w-1 h-1/2 -top-24 z-10 bottom-0 bg-green-100"></aside>
+      <aside class="absolute left-8 w-1 h-1/2 top-40 z-10 bottom-0 bg-green-100"></aside>
+      <p class="font-light text-xs text-green-50 mt-1 ml-1 pl-12 text-left max-w-4xl m-auto">
+        Website and contents are property of Stephen Taylor Witte. Site built in eleventy.js with tailwind and alpine. Code available on github.com
+      </p>
+    </footer>
+  </body>
+</html>
