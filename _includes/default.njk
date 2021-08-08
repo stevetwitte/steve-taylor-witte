@@ -16,11 +16,10 @@
     <script defer src="/js/alpine.js?v={% version %}"></script>
   </head>
   <body class="subpixel-antialiased bg-gray-50">
-    <header class="bg-gray-200 p-5 pb-0 md:p-8 md:pb-0 border-b-4 border-gray-400 lg:pl-24 xl:pl-32">
-      <div class="relative -top-1 left-2 font-light italic text-gray-700 text-3xl xl:text-4xl md:ml-12 lg:ml-24 xl:ml-44">
-        <span class="text-sm not-italic absolute top-0 left-0">the homepage of</span>
+    <header class="sticky z-10 top-0 left-0 right-0 bg-gray-200 p-5 pb-0 md:p-8 md:pb-0 border-b-4 border-gray-400 lg:pl-24 xl:pl-32">
+      <div class="relative -top-1 left-2 font-light italic text-gray-700 text-4xl ml-3 md:ml-12 lg:ml-24 xl:ml-44">
         <h1 class="absolute top-3 left-2">steve taylor witte</h1>
-        <span class="text-sm not-italic absolute top-10 md:top-8 left-12 md:left-36 mt-1 md:mt-3 xl:mt-7">software engineer, musician, creative</span>
+        <span class="text-sm not-italic absolute top-6 left-12 md:left-36 mt-7">software engineer, musician, creative</span>
       </div>
       <div class="text-gray-700 font-normal text-lg lg:text-2xl mt-20 md:mt-16 pr-2 md:pr-12 pb-0 pt-2 text-right max-w-4xl lg:max-w-6xl">
         <div x-data="{ open: false }" @click.away="open = false" class="relative">
