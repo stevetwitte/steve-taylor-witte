@@ -3,4 +3,30 @@
 {% block title %}steve.taylorwitte.com - projects{% endblock %}
 
 {% block content %}
+<div>
+  <section>
+    <h2 class="font-light text-3xl md:text-4xl text-gray-900">
+      Projects
+    </h2>
+    <article class="mt-8 mb-6">
+      <h3 class="font-light text-2xl md:text-3xl text-gray-900">
+        Htcht
+      </h3>
+      <a name="htcht" class="underline font-light text-xl" href="https://github.com/trimagency/htcht">github.com/trimagency/htcht</a>
+      <p class="font-light text-lg text-gray-900 mt-2 ml-1 leading-7">
+        This project is a CLI that I led development on while working as the Director of Product Engineering at Trim Agency. This was the first serious CLI that I built and provided a lot of insight into the power and simplicity of Ruby as a general scripting language. The project was written using the Thor CLI framework and will create a Rails or Angular app with a lot of sensible defaults that were implemented while I was at Trim Agency. One of the standout features of this CLI is that the apps are generated entirely inside a Docker container, eliminating the need for Mac users to install anything but this tool.
+      </p>
+    </article>
+    <hr class="border-b">
+    <article class="my-6">
+      <h3 class="font-light text-2xl md:text-3xl text-gray-900">
+        MyInvestmentTime
+      </h3>
+      <a name="htcht" class="underline font-light text-xl" href="https://github.com/stevetwitte/my-investment-time">github.com/stevetwitte/my-investment-time</a>
+      <p class="font-light text-lg text-gray-900 mt-2 ml-1 leading-7">
+        The idea was to give users a Twitter-like feed to check on what the community was doing in their investment time. I soon thought of my team and wanted to add a way to track teams and to update the status of the task or project. I have tried to be careful in not creating a replacement for typical project management tools. I don't want to replace GitHub or Trello. So instead think of MyInvestmentTime.com as a standup for your investment time and a way to share that among teams and the broader community. The project is build in Ruby on Rails with a bit of React, I wrote an article about the interaction between Rails and React as well.
+      </p>
+    </article>
+  </section>
+</div>
 {% endblock %}
