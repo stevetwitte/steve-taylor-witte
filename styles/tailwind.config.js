@@ -9,6 +9,29 @@ module.exports = {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif']
     },
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: {
+              fontWeight: '300',
+            },
+            h2: {
+              fontWeight: '300',
+            },
+            h3: {
+              fontWeight: '300',
+            },
+            h4: {
+              fontWeight: '300',
+            },
+            h5: {
+              fontWeight: '300',
+            },
+          },
+        },
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

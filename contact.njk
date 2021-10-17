@@ -4,16 +4,24 @@
 
 {% block content %}
 <div>
-  <section>
-    <h2 class="font-light text-3xl md:text-4xl text-gray-900">
+  <section class="mt-8 prose md:prose-lg max-w-none">
+    <h2>
       Contact
     </h2>
-    <div class="mt-8 mb-6">
-      <a href="mailto:stevetwitte@gmail.com">
-        <h2 class="font-light text-xl text-gray-900">Email:</h2>
-        <h2 class="font-light text-2xl text-gray-900 underline">stevetwitte@gmail.com</h2>
-      </a>
-    </div>
+    <article class="my-6 border-t-2 border-black">
+      <h3>
+        Email:
+        <a href="mailto:stevetwitte@gmail.com">
+          stevetwitte@gmail.com
+        </a>
+      </h3>
+      <h3>
+        LinkedIn:
+        <a name="linkedin" href="https://www.linkedin.com/in/stevetwitte">
+          linkedin.com/in/stevetwitte
+        </a>
+      </h3>
+    </article>
   </section>
 </div>
 {% endblock %}
